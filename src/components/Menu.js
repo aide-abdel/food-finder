@@ -15,7 +15,7 @@ function Menu() {
         <li className="menu-list-item drop-down-menu-recipes">Recipes</li>
         <div className="recipe-menu-categories">
           <ul className="recipe-category">
-            Cuisine Area
+            {/* Cuisine Area */}
             <li className="recipe-category-menu-item">American</li>
             <li className="recipe-category-menu-item">British</li>
             <li className="recipe-category-menu-item">Canadian</li>
@@ -27,13 +27,13 @@ function Menu() {
             <li className="recipe-category-menu-item">Greek</li>
           </ul>
           <ul className="recipe-category">
-            Meal Type
+            {/* Meal Type */}
             <li className="recipe-category-menu-item">BreakFast</li>
             <li className="recipe-category-menu-item">Dinner</li>
             <li className="recipe-category-menu-item">Lunch</li>
           </ul>
           <ul className="recipe-category">
-            Diet
+            {/* Diet */}
             <li className="recipe-category-menu-item">Balanced</li>
             <li className="recipe-category-menu-item">High-fiber</li>
             <li className="recipe-category-menu-item">High-protein</li>

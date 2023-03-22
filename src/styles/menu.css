@@ -60,7 +60,8 @@ body {
   font-size: 1.2em;
   color: rgb(247, 165, 13);
 }
-.login-search:hover {
+.login:hover,
+.search:hover {
   color: black;
 }
 .drop-down-menu-recipes {
@@ -93,9 +94,10 @@ body {
 }
 .recipe-category-menu-item {
   color: #5cb85c;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   list-style: none;
   cursor: pointer;
+  font-weight: bold;
 }
 .recipe-category-menu-item:hover {
   color: black;
