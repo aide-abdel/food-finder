@@ -1,0 +1,19 @@
+"Food Finder"
+
+This app allows users to search for recipes based on ingredients they have on hand. The app would use the Spoonacular API to retrieve recipe data, and display it in a user-friendly interface.
+
+The app would allow users to:
+
+- Search for recipes by entering ingredients they have on hand
+- View recipe information, including ingredients, instructions, and nutritional information
+- Filter search results by cuisine, meal type, and dietary restrictions
+- Save favorite recipes for quick access
+- Generate a shopping list based on selected recipes
+- Google Maps API, to display the locations of nearby grocery stores.
+
+
+
+/////////////////////// 
+
+Food Finder
+

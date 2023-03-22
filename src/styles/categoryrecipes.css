@@ -1,0 +1,9 @@
+/* .category-recipes-container {
+} */
+.category-recipes-title {
+  font-size: 3em;
+}
+.home-recipes-container {
+  display: flex;
+  justify-content: space-around;
+}

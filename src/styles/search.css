@@ -1,0 +1,50 @@
+.search-main {
+  /* border: solid black; */
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  background-image: url("https://cutewallpaper.org/21/sandwich-wallpaper/Wallpaper-greens-chicken-bread-meat-vegetables-sauce-.jpg");
+  /* background-color: beige; */
+  background-size: cover;
+  padding: 2rem;
+  /* margin-left: 7%; */
+}
+.search-main-input {
+  width: 40%;
+  height: 3em;
+  margin: auto;
+  /* margin-left: 25%; */
+  border: solid green;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+.search-main-button {
+  width: 20%;
+  margin: auto;
+  margin-top: 2em;
+  height: 2em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.search-main-button:hover {
+  background-color: green;
+  color: white;
+}
+.search-main-button:active {
+  font-weight: bold;
+}
+.search-main-filters {
+  background-color: orange;
+  height: 3em;
+  /* margin-top: 1em; */
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.search-main-filter {
+  font-weight: bold;
+  padding: 0.5em;
+  color: green;
+}
