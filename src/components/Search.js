@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // The user interface for the "Food Finder" app is designed to be simple and intuitive. Users can enter the ingredients they have on hand in the search bar, and the app will display a list of recipes that include those ingredients. The search results are displayed in cards, which provide information about the recipe, such as its name, image, and a brief description.
@@ -6,9 +7,14 @@ import { useNavigate } from "react-router-dom";
 
 function Search() {
   const navigate = useNavigate();
+  const [ingredient, setIngredient] = useState("");
+
   function submitHandler(event) {
     event.preventDefault();
-    navigate(`/SearchIngredient/chicken`);
+    navigate(`/SearchIngredient/${ingredient}`);
+  }
+  function handleChange(e) {
+    setIngredient(e.target.value);
   }
   return (
     <form onSubmit={submitHandler}>
@@ -17,6 +23,7 @@ function Search() {
           type="text"
           className="search-main-input"
           placeholder="Search ingredient"
+          onChange={handleChange}
         />
         {/* <input type="button" value="Search" className='search-main-button'/> */}
 
