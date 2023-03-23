@@ -35,11 +35,12 @@
   font-weight: bold;
 }
 .search-main-filters {
-  background-color: orange;
-  height: 3em;
+  /* background-color: orange; */
+  height: 2.5em;
   /* margin-top: 1em; */
-  width: 30%;
+  width: 40%;
   margin: auto;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -47,4 +48,14 @@
   font-weight: bold;
   padding: 0.5em;
   color: green;
+}
+.submit-button {
+  width: 10%;
+  height: 2em;
+  margin: auto;
+  background-color: green;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5%;
 }

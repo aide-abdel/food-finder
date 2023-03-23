@@ -46,6 +46,10 @@ body {
   padding-top: 3%;
   box-sizing: border-box;
 }
+.menu-list-item a {
+  color: rgb(247, 165, 13);
+  text-decoration: none;
+}
 .menu-list-item:hover {
   color: black;
 }

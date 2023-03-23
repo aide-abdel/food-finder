@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Menu() {
   return (
@@ -11,7 +12,9 @@ function Menu() {
         />
       </div>
       <ul className="menu-list">
-        <li className="menu-list-item">Home</li>
+        <li className="menu-list-item">
+          <Link to="/">Home</Link>
+        </li>
         <li className="menu-list-item drop-down-menu-recipes">Recipes</li>
         <div className="recipe-menu-categories">
           <ul className="recipe-category">
