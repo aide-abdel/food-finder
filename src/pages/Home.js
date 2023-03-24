@@ -22,7 +22,7 @@ function Home() {
   return (
     <div>
       <Menu />
-      <Search />
+      <Search cssClass="search-main" />
       {categoryDataHome?.meals.map((category, index) => {
         return <CategoryRecipes key={index} category={category.strCategory} />;
       })}

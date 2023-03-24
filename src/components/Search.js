@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // Users can filter the search results by cuisine, meal type, and dietary restrictions using the filters on the left-hand side of the screen. They can also save their favorite recipes for quick access using the "Add to Favorites" button.
 
-function Search() {
+function Search({ cssClass }) {
   const navigate = useNavigate();
   const [ingredient, setIngredient] = useState("");
 
@@ -18,16 +18,13 @@ function Search() {
   }
   return (
     <form onSubmit={submitHandler}>
-      <div className="search-main">
+      <div className={cssClass}>
         <input
           type="text"
-          className="search-main-input"
+          className={`${cssClass}-input`}
           placeholder="Search ingredient"
           onChange={handleChange}
         />
-        {/* <input type="button" value="Search" className='search-main-button'/> */}
-
-        {/* <input type="submit" value="submit" className="submit-button" /> */}
       </div>
     </form>
   );

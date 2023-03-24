@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 
 function Menu() {
   const [areas, setAreas] = useState([]);
@@ -88,12 +89,16 @@ function Menu() {
           </ul>
         </div>
         <li className="menu-list-item">Meal Planner</li>
-        <li className="menu-list-item">Make your Recipe</li>
+        <li className="menu-list-item">
+          <Link to="MakeYourRecipe">Make your Recipe</Link>
+        </li>
         {/* https://www.eatthismuch.com/food/browse/?type=recipe */}
         <li className="menu-list-item">Cooking 101</li>
       </ul>
       <div className="login-search">
-        <div className="search"></div>
+        <div className="search">
+          <Search cssClass="search-menu-bar" />
+        </div>
         <div className="login">Login</div>
       </div>
     </nav>
