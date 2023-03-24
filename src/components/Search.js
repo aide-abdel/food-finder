@@ -27,7 +27,7 @@ function Search() {
         />
         {/* <input type="button" value="Search" className='search-main-button'/> */}
 
-        <input type="submit" value="submit" className="submit-button" />
+        {/* <input type="submit" value="submit" className="submit-button" /> */}
       </div>
     </form>
   );

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Menu() {
+  const [areas, setAreas] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        "https://www.themealdb.com/api/json/v1/1/list.php?a=list"
+      );
+      try {
+        const data = await response.json();
+        setAreas(data.meals);
+      } catch (e) {
+        alert(e);
+      }
+    }
+    fetchData();
+  }, []);
   return (
     <nav className="menu-container">
       <div className="logo">
@@ -18,28 +34,57 @@ function Menu() {
         <li className="menu-list-item drop-down-menu-recipes">Recipes</li>
         <div className="recipe-menu-categories">
           <ul className="recipe-category">
-            {/* Cuisine Area */}
-            <li className="recipe-category-menu-item">American</li>
-            <li className="recipe-category-menu-item">British</li>
-            <li className="recipe-category-menu-item">Canadian</li>
-            <li className="recipe-category-menu-item">Chinese</li>
-            <li className="recipe-category-menu-item">Croatian</li>
-            <li className="recipe-category-menu-item">Dutch</li>
-            <li className="recipe-category-menu-item">Egyptian</li>
-            <li className="recipe-category-menu-item">French</li>
-            <li className="recipe-category-menu-item">Greek</li>
+            Cuisine Area
+            {areas?.map((area, index) => (
+              <li key={index} className="recipe-category-menu-item">
+                <Link to={`/Recipes/${area.strArea}`}>{area.strArea}</Link>
+              </li>
+            ))}
           </ul>
           <ul className="recipe-category">
-            {/* Meal Type */}
-            <li className="recipe-category-menu-item">BreakFast</li>
-            <li className="recipe-category-menu-item">Dinner</li>
-            <li className="recipe-category-menu-item">Lunch</li>
+            Meal Type
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/breakFast">breakFast </Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/dessert">Dessert </Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/side">Side </Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/starter">Starter</Link>
+            </li>
           </ul>
           <ul className="recipe-category">
-            {/* Diet */}
-            <li className="recipe-category-menu-item">Balanced</li>
-            <li className="recipe-category-menu-item">High-fiber</li>
-            <li className="recipe-category-menu-item">High-protein</li>
+            Dish type
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/beef">Beef </Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/chicken">Chicken</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/goat">Goat</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/lamb">Lamb</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/pork">Pasta</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/pork">Pork</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/vegan">Vegan</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/vegetarian">Vegetarian</Link>
+            </li>
+            <li className="recipe-category-menu-item">
+              <Link to="/Recipes/miscellaneous">Miscellaneous</Link>
+            </li>
           </ul>
         </div>
         <li className="menu-list-item">Meal Planner</li>
@@ -48,7 +93,7 @@ function Menu() {
         <li className="menu-list-item">Cooking 101</li>
       </ul>
       <div className="login-search">
-        <div className="search">Search</div>
+        <div className="search"></div>
         <div className="login">Login</div>
       </div>
     </nav>

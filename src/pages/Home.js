@@ -28,7 +28,6 @@ function Home() {
       {categoryDataHome?.meals.map((category, index) => {
         return <CategoryRecipes key={index} category={category.strCategory} />;
       })}
-      <SearchIngredient />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import RecipeDetails from "./pages/RecipeDetails";
+import Recipes from "./pages/Recipes";
 import SearchIngredient from "./pages/SearchIngredient";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           path="/SearchIngredient/:ingredient"
           element={<SearchIngredient />}
         />
+        <Route path="/Recipes/:recipe" element={<Recipes />} />
       </Routes>
     </div>
   );
