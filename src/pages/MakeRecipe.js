@@ -18,38 +18,44 @@ function MakeRecipe() {
     }
     fetchData();
   }, []);
-  function checkImage(url) {
-    var image = new Image();
-    image.onload = function () {
-      if (this.width > 0) {
-        console.log("image exists");
-      }
-    };
-    image.onerror = function () {
-      console.log("image doesn't exist");
-    };
-    image.src = url;
-  }
-  //   checkImage("https://picsum.photos/200/300");
 
-  console.log(ingredients.meals);
   return (
     <div>
       <Menu />
-      {ingredients.meals?.map((ing, index) => {
-        if (index < 20)
-          return (
-            <>
-              <div>
-                {ing.strIngredient} : {ing?.strDescription}
-              </div>
-              <img
-                alt={ing.strIngredient}
-                src={`https://www.themealdb.com/images/ingredients/${ing.strIngredient}.png`}
-              />
-            </>
-          );
-      })}
+      <div className="make-recipe-container">
+        <table className="recipe-table">
+          <thead>
+            <tr>
+              <th>ADD/REMOVE</th>
+              <th>name</th>
+              <th>Image</th>
+              <th>description</th>
+              <th>category</th>
+            </tr>
+          </thead>
+          <tbody className="recipe-table-body">
+            {ingredients.meals?.map((ing, index) => {
+              return (
+                <tr key={index} className="table-recipe-row">
+                  <td>+/-</td>
+                  <td>{ing.strIngredient}</td>
+                  <td className="recipe-image-container">
+                    <img
+                      className="recipe-image"
+                      alt={ing.strIngredient}
+                      src={`https://www.themealdb.com/images/ingredients/${ing.strIngredient}.png`}
+                    />
+                  </td>
+                  <td className="recipe-table-description">
+                    {ing?.strDescription}
+                  </td>
+                  <td>{ing?.strType}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

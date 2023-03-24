@@ -7,7 +7,7 @@ import "./styles/recipecard.css";
 import "./styles/categoryrecipes.css";
 import "./styles/recipedetails.css";
 import "./styles/recipespage.css";
-
+import "./styles/makerecipe.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
