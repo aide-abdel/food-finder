@@ -93,6 +93,10 @@ body {
   display: flex;
   /* color: red; */
 }
+.recipe-menu-categories a {
+  color: #5cb85c;
+  text-decoration: none;
+}
 .recipe-menu-categories:hover {
   display: flex;
 }

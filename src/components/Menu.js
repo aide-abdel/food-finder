@@ -90,7 +90,7 @@ function Menu() {
         </div>
         <li className="menu-list-item">Meal Planner</li>
         <li className="menu-list-item">
-          <Link to="MakeYourRecipe">Make your Recipe</Link>
+          <Link to="/MakeYourRecipe">Make your Recipe</Link>
         </li>
         {/* https://www.eatthismuch.com/food/browse/?type=recipe */}
         <li className="menu-list-item">Cooking 101</li>
