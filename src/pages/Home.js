@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import CategoryRecipes from "../components/CategoryRecipes";
 import Menu from "../components/Menu";
 import Search from "../components/Search";
-import SearchIngredient from "./SearchIngredient";
-
 function Home() {
   /* After search, we will display meals by categories from  TheMealDBAPI*/
 

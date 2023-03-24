@@ -31,7 +31,7 @@ function Recipes() {
       setRecipesByCategory(dataCategory);
     }
     fetchData();
-  }, []);
+  });
 
   let recipesData;
 
