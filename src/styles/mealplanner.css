@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+thead th {
+  background-color: #eee;
+}
+
+tbody td {
+  background-color: #fff;
+}
+
+tbody td:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td:not(:last-child) {
+  border-right: none;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none;
+}

@@ -88,7 +88,9 @@ function Menu() {
             </li>
           </ul>
         </div>
-        <li className="menu-list-item">Meal Planner</li>
+        <li className="menu-list-item">
+          <Link to="/MealPlanner">Meal Planner</Link>
+        </li>
         <li className="menu-list-item">
           <Link to="/MakeYourRecipe">Make your Recipe</Link>
         </li>
