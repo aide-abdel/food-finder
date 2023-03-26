@@ -7,9 +7,10 @@ function IngredientCard({ ing }) {
   function diplayIngredientDetails(ing) {
     setModal(true);
   }
-  function exitModal() {
-    setModal(false);
-  }
+  const exitModal = (b) => {
+    setModal(b);
+    console.log("exitModal", b);
+  };
   return (
     <div
       className="make-recipe-ingredient-card"
@@ -25,7 +26,7 @@ function IngredientCard({ ing }) {
         <div className="make-recipe-ingredient-add-remove"> +/-</div>
         <div className="make-recipe-ingredient-type"> {ing?.strType}</div>
       </div>
-      {modal && <Modal ing={ing} exitModal={exitModal} modal={modal} />}
+      {modal && <Modal ing={ing} exitModal={(b) => exitModal(b)} />}
     </div>
   );
 }

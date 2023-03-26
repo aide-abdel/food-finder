@@ -1,15 +1,14 @@
 import React from "react";
 
-function Modal({ ing, exitModal, modal }) {
+function Modal({ ing, exitModal }) {
   //   console.log(exitModal);
   //   console.log(ing);
-  console.log("modal", modal);
   return (
     <div
       className="modal-container"
       onClick={() => {
-        exitModal();
-        console.log("Test click");
+        exitModal(false);
+        console.log("Modal");
       }}
     >
       <div className="modal-up-row">
