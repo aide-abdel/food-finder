@@ -31,9 +31,9 @@
   background-color: orange;
   position: fixed;
   width: 60%;
-  height: 50vh;
+  height: 60vh;
   top: 20vh;
-  left: 35vh;
+  left: 40vh;
 }
 .modal-up-row {
   display: flex;
@@ -44,4 +44,37 @@
 }
 .modal-exit {
   cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  height: 100%;
+}
+.modal-left-side {
+  width: 70%;
+  height: 100%;
+}
+.modal-ingredient-description {
+  height: 60%;
+  /* overflow-y: scroll; */
+  /* position: relative; */
+}
+.modal-ingredient-picture {
+  width: 50%;
+  height: 40%;
+  float: left;
+}
+.modal-ingredient-image {
+  width: 100%;
+  height: 100%;
+}
+.modal-nutrient-container {
+  width: 70%;
+  margin: auto;
+}
+.nutrient-row {
+  display: flex;
+  justify-content: space-between;
+}
+.nutrient-name {
+  font-weight: bold;
 }
