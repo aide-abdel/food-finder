@@ -24,7 +24,9 @@ function Cooking101() {
           &#9776;
         </div>
         <div id="sideNavBar" style={{ width: `${width}%` }}>
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <a
+            // eslint-disable-next-line no-script-url
             href="javascript:void(0)"
             className="close-btn"
             onClick={() => closeNav()}
