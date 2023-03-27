@@ -31,7 +31,9 @@
   opacity: 0;
 }
 .modal-container {
-  background-color: orange;
+  background-color: rgb(231, 159, 23);
+  color: white;
+  font-weight: bold;
   position: fixed;
   width: 60%;
   height: 60vh;
