@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Cooking101 from "./pages/Cooking101";
 import Home from "./pages/Home";
 import MakeRecipe from "./pages/MakeRecipe";
 import MealPlanner from "./pages/MealPlanner";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Recipes/:recipe" element={<Recipes />} />
         <Route path="/MakeYourRecipe" element={<MakeRecipe />} />
         <Route path="/MealPlanner" element={<MealPlanner />} />
+        <Route path="/LearnToCook" element={<Cooking101 />} />
       </Routes>
     </div>
   );

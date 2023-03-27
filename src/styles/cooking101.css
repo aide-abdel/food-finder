@@ -1,0 +1,77 @@
+.cooking101-main-container {
+  /* border: solid salmon; */
+  width: 100%;
+  margin-top: 2em;
+}
+.side-menu {
+  font-size: 2em;
+  cursor: pointer;
+  /* border: solid black; */
+  width: 20%;
+  height: 100%;
+  position: fixed;
+}
+#sideNavBar {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  /* top: 0;
+  left: 0; */
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#sideNavBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+#sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.main-content {
+  width: 60%;
+  margin-left: 30%;
+  font-size: 2em;
+  text-align: justify;
+}
+.kitchenBasics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.kitchenBasics-element {
+  border: solid black;
+  width: 30%;
+  font-size: 0.7em;
+}
+.cookingTechniques-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cookingTechniques-element {
+  border: solid black;
+  width: 30%;
+  font-size: 0.7em;
+}
+.kitchenBasics-element-image {
+  width: 100%;
+  height: 20vh;
+}
+.kitchenBasics-element-image-pic {
+  width: 100%;
+  height: 100%;
+}

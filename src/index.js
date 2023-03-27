@@ -9,6 +9,7 @@ import "./styles/recipedetails.css";
 import "./styles/recipespage.css";
 import "./styles/makerecipe.css";
 import "./styles/mealplanner.css";
+import "./styles/cooking101.css";
 
 import { BrowserRouter as Router } from "react-router-dom";
 

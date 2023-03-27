@@ -95,7 +95,9 @@ function Menu() {
           <Link to="/MakeYourRecipe">Make your Recipe</Link>
         </li>
         {/* https://www.eatthismuch.com/food/browse/?type=recipe */}
-        <li className="menu-list-item">Cooking 101</li>
+        <li className="menu-list-item">
+          <Link to="/LearnToCook">Cooking 101</Link>
+        </li>
       </ul>
       <div className="login-search">
         <div className="search">
