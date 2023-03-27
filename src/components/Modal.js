@@ -48,6 +48,7 @@ function Modal({ ing, setModal }) {
           </div>
         </div>
         <div className="modal-right-side">
+          <div className="modal-right-side-title">Nutrient information</div>
           <div className="modal-nutrient-container">
             {nutrients.map((nutrient, index) => {
               return (
