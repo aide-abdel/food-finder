@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menu from "../components/Menu";
+import SafetyElement from "../components/SafetyElement";
 
 function Cooking101() {
   function openNav() {
@@ -34,8 +35,8 @@ function Cooking101() {
           <a href="#kitchenBasics">Kitchen basics</a>
           <a href="#cookingTechniques">cooking techniques</a>
           <a href="#safetyHygiene">Safety and Hygiene</a>
-          <a href="#troubleshooting">Troubleshooting</a>
-          <a href="#resources">Resources</a>
+          {/* <a href="#troubleshooting">Troubleshooting</a>
+          <a href="#resources">Resources</a> */}
         </div>
         <div
           className="main-content"
@@ -283,44 +284,67 @@ function Cooking101() {
             help you cook safely and keep your kitchen clean:
             <div className="safetyHygiene-container">
               <div className="safetyHygiene-element">
-                Wash your hands: Before handling any food, make sure to wash
-                your hands with soap and warm water for at least 20 seconds.
+                <SafetyElement text="Wash your hands" />
+                <div className="safetyHygiene-element-text">
+                  Before handling any food, make sure to wash your hands with
+                  soap and warm water for at least 20 seconds.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Keep your kitchen clean: Wipe down counters, appliances, and
-                utensils with hot, soapy water before and after use.
+                <SafetyElement text="Keep your kitchen clean" />
+                <div className="safetyHygiene-element-text">
+                  Wipe down counters, appliances, and utensils with hot, soapy
+                  water before and after use.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Store food properly: Keep raw meats, poultry, and seafood
-                separate from other foods to prevent cross-contamination. Store
-                foods at the appropriate temperature to prevent spoilage.
+                <SafetyElement text="Store food properly" />
+                <div className="safetyHygiene-element-text">
+                  Keep raw meats, poultry, and seafood separate from other foods
+                  to prevent cross-contamination. Store foods at the appropriate
+                  temperature to prevent spoilage.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Use a food thermometer: Use a food thermometer to ensure that
-                meat and poultry are cooked to a safe internal temperature.
+                <SafetyElement text="Use a food thermometer" />
+                <div className="safetyHygiene-element-text">
+                  Use a food thermometer to ensure that meat and poultry are
+                  cooked to a safe internal temperature.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Be careful with knives: Use a sharp knife and keep your fingers
-                out of the way to prevent injuries.
+                <SafetyElement text="Be careful with knives" />
+                <div className="safetyHygiene-element-text">
+                  Use a sharp knife and keep your fingers out of the way to
+                  prevent injuries.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Use caution with hot surfaces: Use oven mitts or potholders to
-                handle hot dishes and keep flammable objects away from hot
-                surfaces.
+                <SafetyElement text="Use caution with hot surfaces" />
+                <div className="safetyHygiene-element-text">
+                  Use oven mitts or potholders to handle hot dishes and keep
+                  flammable objects away from hot surfaces.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Practice fire safety: Keep a fire extinguisher in the kitchen
-                and never leave the stove unattended when cooking.
+                <SafetyElement text="Practice fire safety" />
+                <div className="safetyHygiene-element-text">
+                  Keep a fire extinguisher in the kitchen and never leave the
+                  stove unattended when cooking.
+                </div>
               </div>
               <div className="safetyHygiene-element">
-                Dispose of waste properly: Dispose of food waste and packaging
-                in the appropriate bin and clean up spills and messes promptly.
+                <SafetyElement text="Dispose of waste properly" />
+                <div className="safetyHygiene-element-text">
+                  Dispose of food waste and packaging in the appropriate bin and
+                  clean up spills and messes promptly.
+                </div>
               </div>
             </div>
             By following these simple tips, you can help prevent foodborne
             illness, injuries, and kitchen fires.
           </section>
-          <section id="troubleshooting">
+          {/* <section id="troubleshooting">
             <h2>Troubleshooting</h2>
             Even the most experienced cooks can run into problems in the
             kitchen. Here are some common cooking issues and how to fix them:
@@ -367,10 +391,10 @@ function Cooking101() {
             Remember, cooking is all about experimentation and learning from
             your mistakes. Don't be afraid to try new things and make
             adjustments along the way.
-          </section>
-          <section id="resources">
+          </section> */}
+          {/* <section id="resources">
             <h2>Resources</h2>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>

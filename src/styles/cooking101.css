@@ -85,4 +85,27 @@
   border: solid black;
   width: 30%;
   height: 30vh;
+  /* padding: 2%; */
+}
+.safetyHygiene-element-title {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  color: green;
+  /* z-index: 2; */
+  font-size: 1.7em;
+  text-align: center;
+}
+.safetyHygiene-element-text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -30vh;
+  left: 0;
+  background-color: green;
+  color: orange;
+  z-index: -1;
 }
