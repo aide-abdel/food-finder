@@ -4,17 +4,23 @@ import Menu from "../components/Menu";
 function Cooking101() {
   function openNav() {
     setWidth(20);
+    setMainwidth(60);
+    setMarginLeft(30);
   }
   function closeNav() {
     setWidth(0);
+    setMainwidth(80);
+    setMarginLeft(10);
   }
   const [width, setWidth] = useState(0);
+  const [mainwidth, setMainwidth] = useState(80);
+  const [marginLeft, setMarginLeft] = useState(10);
   return (
     <div>
       <Menu />
       <div className="cooking101-main-container">
         <div className="side-menu" onClick={() => openNav()}>
-          &#9776; Menu
+          &#9776;
         </div>
         <div id="sideNavBar" style={{ width: `${width}%` }}>
           <a
@@ -31,7 +37,10 @@ function Cooking101() {
           <a href="#troubleshooting">Troubleshooting</a>
           <a href="#resources">Resources</a>
         </div>
-        <div className="main-content">
+        <div
+          className="main-content"
+          style={{ width: `${mainwidth}%`, marginLeft: `${marginLeft}%` }}
+        >
           <section id="introdction">
             <h2>Introduction</h2>
             Welcome to Cooking 101! This page is designed for anyone who is new
