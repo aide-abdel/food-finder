@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FavoriteIcon from "./FavoriteIcon";
 
 function RecipeCard({ meal }) {
   const recipe = meal?.strMeal;
@@ -19,7 +19,7 @@ function RecipeCard({ meal }) {
       <div className="recipe-card-menu">
         <div className="recipe-card-add-planner">Add to planner</div>
         <div className="recipe-card-favorite">
-          <FontAwesomeIcon icon="fa-sharp fa-regular fa-star" size="lg" />
+          <FavoriteIcon />
         </div>
       </div>
     </div>

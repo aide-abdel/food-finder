@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Lato|Roboto|Montserrat|Oswald&display=swap");
+
 .recipe-card {
   /* border: solid orange; */
   width: 22%;
@@ -42,6 +44,12 @@
   font-weight: bold;
   cursor: pointer;
 }
-/* .recipe-card-favorite {
-
-} */
+.recipe-card-favorite {
+  width: 7%;
+  height: 10%;
+}
+.recipe-card-favorite-icon {
+  width: 100%;
+  cursor: pointer;
+  /* height: 100%; */
+}

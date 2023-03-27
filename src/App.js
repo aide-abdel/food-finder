@@ -6,7 +6,9 @@ import MealPlanner from "./pages/MealPlanner";
 import RecipeDetails from "./pages/RecipeDetails";
 import Recipes from "./pages/Recipes";
 import SearchIngredient from "./pages/SearchIngredient";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
+library.add();
 function App() {
   return (
     <div>
