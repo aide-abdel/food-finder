@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddToRecipe from "./AddToRecipe";
 import Modal from "./Modal";
 
 function IngredientCard({ ing }) {
@@ -21,7 +22,8 @@ function IngredientCard({ ing }) {
         >
           {ing.strIngredient}
         </div>
-        <div className="make-recipe-ingredient-add-remove"> +/-</div>
+
+        <AddToRecipe />
         <div className="make-recipe-ingredient-type"> {ing?.strType}</div>
       </div>
 

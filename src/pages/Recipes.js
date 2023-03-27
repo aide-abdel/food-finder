@@ -44,7 +44,7 @@ function Recipes() {
   return (
     <div>
       <Menu />
-      {recipe}
+      <div className="recipes-title">{recipe.toUpperCase()} RECIPES</div>
       <div className="recipes-page-container">
         {recipesData?.map((meal, index) => {
           return <RecipeCard key={index} meal={meal} />;

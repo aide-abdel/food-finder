@@ -1,13 +1,16 @@
 .make-recipe-container {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
-  margin-top: 7%;
+  margin-left: 7%;
+  margin-top: 2em;
 }
 .make-recipe-ingredient-card {
   border: solid green;
   width: 23%;
   height: 25vh;
+  border-radius: 20px;
 }
 .make-recipe-ingredient-image {
   width: 80%;
@@ -77,4 +80,47 @@
 }
 .nutrient-name {
   font-weight: bold;
+}
+.make-recipe-ingredient-name {
+  font-weight: bold;
+  cursor: pointer;
+}
+.make-recipe-ingredient-add {
+  background-color: orange;
+  padding: 0.2em;
+  border-radius: 20px;
+  color: #5cb85c;
+  font-weight: bold;
+  cursor: pointer;
+}
+.make-recipe-ingredient-remove {
+  background-color: orange;
+  padding: 0.2em;
+  border-radius: 20px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.intro-make-recipe {
+  width: 90%;
+  height: 30vh;
+  margin: auto;
+}
+.intro-make-recipe-img {
+  width: 100%;
+  height: 100%;
+}
+.intro-make-recipe-img-pic {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.intro-make-recipe-text {
+  position: relative;
+  top: -100%;
+  font-size: 3em;
+  color: green;
+  background-color: rgb(245, 197, 109, 0.5);
+  padding: 3%;
+  font-family: "Trebuchet MS";
 }
