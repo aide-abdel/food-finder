@@ -11,7 +11,7 @@ function SafetyElement({ text }) {
           setVisible(-2);
         }}
       >
-        {text}
+        <img src={text} className="safety-element-image" alt="safety element" />
       </div>
     </>
   );

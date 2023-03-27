@@ -284,60 +284,66 @@ function Cooking101() {
             help you cook safely and keep your kitchen clean:
             <div className="safetyHygiene-container">
               <div className="safetyHygiene-element">
-                <SafetyElement text="Wash your hands" />
+                <SafetyElement text="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_51/3151621/191217-hand-washing-stock-cs-906a.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Before handling any food, make sure to wash your hands with
-                  soap and warm water for at least 20 seconds.
+                  <b>Wash your hands: </b>Before handling any food, make sure to
+                  wash your hands with soap and warm water for at least 20
+                  seconds.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Keep your kitchen clean" />
+                <SafetyElement text="https://crewcare.co.nz/admin_assets/blog/crewcare-cleaning-kitchen.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Wipe down counters, appliances, and utensils with hot, soapy
-                  water before and after use.
+                  <b>Keep your kitchen clean: </b>Wipe down counters,
+                  appliances, and utensils with hot, soapy water before and
+                  after use.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Store food properly" />
+                <SafetyElement text="https://1.bp.blogspot.com/-rIlweacujZw/XdjE3PXRjMI/AAAAAAAAP08/d3tKWpyMPFcLBx0SncT64NKccXNrTPz8QCLcBGAsYHQ/s1600/Frozen-food-in-containers.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Keep raw meats, poultry, and seafood separate from other foods
-                  to prevent cross-contamination. Store foods at the appropriate
+                  <b>Store food properly: </b>Keep raw meats, poultry, and
+                  seafood separate from other foods to prevent
+                  cross-contamination. Store foods at the appropriate
                   temperature to prevent spoilage.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Use a food thermometer" />
+                <SafetyElement text="https://www.foodsafetynews.com/files/2015/02/Dial_thermometer_406x250-1.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Use a food thermometer to ensure that meat and poultry are
-                  cooked to a safe internal temperature.
+                  <b>Use a food thermometer: </b>Use a food thermometer to
+                  ensure that meat and poultry are cooked to a safe internal
+                  temperature.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Be careful with knives" />
+                <SafetyElement text="https://www.dummies.com/wp-content/uploads/88400.image0.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Use a sharp knife and keep your fingers out of the way to
-                  prevent injuries.
+                  <b>Be careful with knives</b>Use a sharp knife and keep your
+                  fingers out of the way to prevent injuries.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Use caution with hot surfaces" />
+                <SafetyElement text="https://i.etsystatic.com/20249145/r/il/9a3e96/3302226455/il_340x270.3302226455_tfbk.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Use oven mitts or potholders to handle hot dishes and keep
-                  flammable objects away from hot surfaces.
+                  <b>Use caution with hot surfaces: </b>Use oven mitts or
+                  potholders to handle hot dishes and keep flammable objects
+                  away from hot surfaces.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Practice fire safety" />
+                <SafetyElement text="http://www.slc.gov/fire/wp-content/uploads/sites/47/2020/09/Kitchen-Safety-2-1024x498.png" />
                 <div className="safetyHygiene-element-text">
-                  Keep a fire extinguisher in the kitchen and never leave the
-                  stove unattended when cooking.
+                  <b>Practice fire safety: </b>Keep a fire extinguisher in the
+                  kitchen and never leave the stove unattended when cooking.
                 </div>
               </div>
               <div className="safetyHygiene-element">
-                <SafetyElement text="Dispose of waste properly" />
+                <SafetyElement text="https://i.ytimg.com/vi/Lfj8SKFlTpI/maxresdefault.jpg" />
                 <div className="safetyHygiene-element-text">
-                  Dispose of food waste and packaging in the appropriate bin and
-                  clean up spills and messes promptly.
+                  <b>Dispose of waste properly: </b>Dispose of food waste and
+                  packaging in the appropriate bin and clean up spills and
+                  messes promptly.
                 </div>
               </div>
             </div>
